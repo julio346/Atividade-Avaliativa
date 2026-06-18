@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Do Candidato - ENEM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Portal Do Candidato - ENEM</h1>
+
+        <form id="loginEnem">
+            <p>
+                <label for="email">Digite seu e-mail</label><br>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="senha">Insira a sua Senha</label><br>
+                <input type="password" id="senha" name="senha"
+                       minlength="8"
+                       pattern="(?=.*[A-Z]).*"
+                       title="A senha deve ter pelo menos 8 caracteres e uma letra maiúscula."
+                       required>
+            </p>
+
+            <button type="submit">Acessar</button>
+        </form>
+
+        <br>
+
+        <button type="button" id="cadastro" onclick="cadastro()">
+            Cadastrar Novo Usuário
+        </button>
+    </div>
+
+    <footer>
+        <p>© 2025 Portal do Candidato</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

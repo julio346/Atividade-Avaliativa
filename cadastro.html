@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container2">
+
+        <form id="cadastroForm">
+
+            <h1>Tela de Inscrição</h1>
+
+            <p>
+                <label for="nome">Seu Nome Completo</label><br>
+                <input type="text" id="nome" name="nome" required>
+            </p>
+
+            <p>
+                <label for="email">Insira seu e-mail</label><br>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="telefone">Telefone</label><br>
+                <input type="tel" id="telefone" name="telefone" required>
+            </p>
+
+            <p>
+                <label for="mae">Nome da Mãe</label><br>
+                <input type="text" id="mae" name="mae" required>
+            </p>
+
+            <p>
+                <label for="pai">Nome do Pai (Opcional)</label><br>
+                <input type="text" id="pai" name="pai">
+            </p>
+
+            <p>
+                <label for="endereco">Endereço (Rua/Avenida)</label><br>
+                <input type="text" id="endereco" name="endereco" required>
+            </p>
+
+            <p>
+                <label for="numero">Número</label><br>
+                <input type="number" id="numero" name="numero" required>
+            </p>
+
+            <p>
+                <label for="cidade">Cidade</label><br>
+                <input type="text" id="cidade" name="cidade" required>
+            </p>
+
+            <p>
+                <label for="estado">Estado</label><br>
+                <select id="estado" name="estado" required>
+                    <option value="">Selecione um estado</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="pais">País</label><br>
+                <select id="pais" name="pais" required>
+                    <option value="BR">Brasil</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="ensino">Situação do Ensino Médio</label><br>
+                <select id="ensino" name="ensino" required>
+                    <option value="concluido">Já concluí</option>
+                    <option value="cursando">Estou cursando</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="escola">Tipo de Escola</label><br>
+                <select id="escola" name="escola" required>
+                    <option value="publica">Pública</option>
+                    <option value="privada">Privada</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="senha">Senha</label><br>
+                <input type="password" id="senha" name="senha" required>
+            </p>
+
+            <p>
+                <label for="confirmarSenha">Confirmar Senha</label><br>
+                <input type="password" id="confirmarSenha" name="confirmarSenha" required>
+            </p>
+
+            <button type="submit">Salvar Inscrição</button>
+            <button type="button" onclick="voltar()">Voltar</button>
+
+        </form>
+
+    </div>
+
+    <script src="2script.js" defer></script>
+</body>
+
+</html>
