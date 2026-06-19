@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Inscrição Da Prova:</h1>
+
+        <label for="lingua">Língua Estrangeira:</label><br>
+        <select id="lingua" name="lingua" required>
+            <option value="IG">Inglês</option>
+            <option value="ES">Espanhol</option>
+        </select>
+
+        <br><br>
+
+        <label for="estado">Estado</label><br>
+        <input type="text" placeholder="Estado" id="estado" required>
+
+        <br><br>
+
+        <label for="cidade">Cidade</label><br>
+        <input type="text" placeholder="Cidade" id="cidade" required>
+
+        <br><br>
+
+        <p>Necessita de atendimento especializado?</p>
+
+        <label>
+            <input type="radio" name="atendimento" value="sim" id="sim">
+            Sim
+        </label>
+
+        <label>
+            <input type="radio" name="atendimento" value="nao" id="nao">
+            Não
+        </label>
+
+        <br><br>
+
+        <div id="campoDescricao" style="display:none;">
+            <label for="descricao">Informe sua necessidade especializada:</label><br>
+            <input type="text" id="descricao" placeholder="Ex: Libras, Braille, sala adaptada">
+        </div>
+    </div>
+</body>
+
+</html>
